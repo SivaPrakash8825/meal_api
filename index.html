@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meal api</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popupcon active"></div>
+    <nav class="navbar">
+      <div class="title">
+        <p>foody lover</p>
+        <img src="./images/logo.png" />
+      </div>
+      <div class="inputs">
+        <input placeholder="enter dish" id="inputs" />
+        <i class="ri-search-line searchicon"></i>
+      </div>
+    </nav>
+    <div class="fav-holder">
+      <h1>your favourite dish..</h1>
+      <ul id="favlist"></ul>
+    </div>
+    <div class="random-holder">
+      <div class="rand"></div>
+    </div>
+    <div class="image-container" id="image-con">
+      <div class="danger"></div>
+      <ul id="imgul"></ul>
+    </div>
+    <div class="countries">
+      <h1>browse food by country</h1>
+      <ul id="country">
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/gp.png"
+            id="flag"
+            data="British" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/us.png"
+            id="flag"
+            data="America" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/fr.png"
+            id="flag"
+            data="French" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/ca.png"
+            id="flag"
+            data="Canadian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/jm.png"
+            id="flag"
+            data="Jamaican" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/cn.png"
+            id="flag"
+            data="Chinese" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/nl.png"
+            id="flag"
+            data="Dutch" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/eg.png"
+            id="flag"
+            data="Egyptian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/gr.png"
+            id="flag"
+            data="Greek" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/in.png"
+            id="flag"
+            data="Indian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/ie.png"
+            id="flag"
+            data="Irish" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/it.png"
+            id="flag"
+            data="Italian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/jp.png"
+            id="flag"
+            data="Japanese" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/kn.png"
+            id="flag"
+            data="Kenyan" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/my.png"
+            id="flag"
+            data="Malaysian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/mx.png"
+            id="flag"
+            data="Mexican" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/ma.png"
+            id="flag"
+            data="Moroccan" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/hr.png"
+            id="flag"
+            data="Croatian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/no.png"
+            id="flag"
+            data="Norwegian" />
+        </li>
+        <li>
+          <img
+            src="https://www.themealdb.com/images/icons/flags/big/64/pt.png"
+            id="flag"
+            data="Portuguese" />
+        </li>
+      </ul>
+    </div>
+    <div class="categories">
+      <h1>search food by categories!!</h1>
+    </div>
+    <div class="alphabets">
+      <ul class="alphabetlist"></ul>
+    </div>
+    <footer>created by siva prakash</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
