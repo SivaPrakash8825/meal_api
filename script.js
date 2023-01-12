@@ -108,8 +108,30 @@ async function setinputvalue(datas) {
     </li>`;
   });
   imgholder.innerHTML = html;
+  windowheart(imgholder);
   showpopup(imgholder);
   favbtnid(imgholder);
+}
+
+function windowheart(datas) {
+  const getids = datas.querySelectorAll("i");
+  const lsdatas = getlsdata();
+  let count = true;
+  getids.forEach((id) => {
+    let ids = id.getAttribute("id");
+    console.log(ids);
+    for (let i = 0; i < lsdatas.length + 1; i++) {
+      if (ids === lsdatas[i]) {
+        count = false;
+      }
+    }
+    if (count === false) {
+      id.classList.add("hactive");
+    } else {
+      id.classList.remove("hactive");
+    }
+    count = true;
+  });
 }
 
 function favbtnid(imgholder) {
@@ -168,6 +190,7 @@ function favrej(favhold) {
     btn.addEventListener("click", () => {
       removelsdata(btn.getAttribute("id"));
       showfavdish();
+      windowheart(imgholder);
     });
   });
 }
